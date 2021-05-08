@@ -8,8 +8,10 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet weak var buttonStart: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonStart.makeSwadowWithCorners(button: buttonStart)
     }
     override func present(_ viewControllerToPresent: UIViewController,
                           animated flag: Bool,

@@ -11,7 +11,7 @@
         <!--First View Controller-->
         <scene sceneID="DfV-k2-mmb">
             <objects>
-                <viewController id="DUR-1p-MoS" customClass="FirstViewController" customModule="DZ12_2_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DUR-1p-MoS" customClass="FirstViewController" customModule="RacingSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gk4-aK-UsP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,6 +54,9 @@
                             <constraint firstItem="m1K-gj-prs" firstAttribute="leading" secondItem="4qU-Oo-vod" secondAttribute="leading" constant="63" id="ysi-Bm-xuL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonStart" destination="m1K-gj-prs" id="mdl-hc-WQD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Aa-ec-frg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +65,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DZ12_2_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RacingSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
