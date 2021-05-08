@@ -30,6 +30,11 @@
 		FED34DC4263B1B560029C5C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		FEEC4E712643E2CF007AF45B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FEEC4E75264695DA007AF45B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FEEC4E7C26469935007AF45B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FEEC4E7D26469935007AF45B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		FEEC4E7E26469935007AF45B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FEEC4E7F26469936007AF45B /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FEEC4E8026469936007AF45B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				FE7E52332625C34D009FF711 /* AppDelegate.swift */,
+				FEEC4E7B264698E6007AF45B /* Resources */,
 				FE7E52352625C34D009FF711 /* SceneDelegate.swift */,
 				FE7E52372625C34D009FF711 /* ViewController.swift */,
 				FED34DC4263B1B560029C5C0 /* FirstViewController.swift */,
@@ -82,6 +88,18 @@
 				FEEC4E712643E2CF007AF45B /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEEC4E7B264698E6007AF45B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEEC4E7E26469935007AF45B /* Montserrat-Bold.ttf */,
+				FEEC4E7D26469935007AF45B /* Montserrat-Light.ttf */,
+				FEEC4E7F26469936007AF45B /* Montserrat-Medium.ttf */,
+				FEEC4E8026469936007AF45B /* Montserrat-Regular.ttf */,
+				FEEC4E7C26469935007AF45B /* Montserrat-SemiBold.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
