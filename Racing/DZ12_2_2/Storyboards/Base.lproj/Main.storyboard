@@ -56,6 +56,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonStart" destination="m1K-gj-prs" id="mdl-hc-WQD"/>
+                        <outlet property="setting" destination="Qfi-zw-tHX" id="OqY-h5-VQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Aa-ec-frg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
