@@ -37,6 +37,14 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="orE-70-Ts5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvj-QR-JKG">
+                                <rect key="frame" x="63" y="678" width="288" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qU-Oo-vod"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,6 +64,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonStart" destination="m1K-gj-prs" id="mdl-hc-WQD"/>
+                        <outlet property="resultButton" destination="pvj-QR-JKG" id="lCe-lb-XiT"/>
                         <outlet property="setting" destination="Qfi-zw-tHX" id="OqY-h5-VQi"/>
                     </connections>
                 </viewController>

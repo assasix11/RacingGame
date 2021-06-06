@@ -8,10 +8,13 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    @IBOutlet weak var resultButton: UIButton!
     @IBOutlet weak var buttonStart: UIButton!
     @IBOutlet weak var setting: UIImageView!
     override func viewDidLoad() {
         buttonStart.layer.cornerRadius = 30
+        buttonStart.setTitle("Старт", for: .normal)
+        startButtonSettings()
         if let managerLoad = UserDefaults.standard.string(forKey: "result") {
             switch managerLoad {
             case "jeep":
@@ -44,5 +47,18 @@ class FirstViewController: UIViewController {
         print("smth")
         let homeView = SettingsViewController()
         present(homeView, animated: true, completion: nil)
+    }
+    func startButtonSettings() {
+        resultButton.setTitle("Результаты", for: .normal)
+        resultButton.layer.borderWidth = 1
+        resultButton.layer.borderColor = UIColor.black.cgColor
+        resultButton.layer.cornerRadius = 30
+        view.addSubview(resultButton)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(presentTable))
+        resultButton.addGestureRecognizer(tap)
+    }
+    @objc func presentTable() {
+        let tableView = TableViewController()
+        present(tableView, animated: true, completion: nil)
     }
 }

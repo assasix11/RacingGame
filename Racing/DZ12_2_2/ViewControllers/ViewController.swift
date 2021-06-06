@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Darwin
+//import Darwin
 class ViewController: UIViewController {
     var road: UIImageView!
     var road2: UIImageView!
@@ -58,7 +58,14 @@ class ViewController: UIViewController {
                 print("error in do/catch create directory")
             }
             // let decodableDataOfResults = decoderData(data: dataOfResults, myStruct: result)
+            
         }
+    override func present(_ viewControllerToPresent: UIViewController,
+                          animated flag: Bool,
+                          completion: (() -> Void)? = nil) {
+        viewControllerToPresent.modalPresentationStyle = .fullScreen
+        super.present(viewControllerToPresent, animated: false, completion: completion)
+      }
     @objc func leftButtonAction() {
         positionXCar -= 30
         if positionXCar < 0 {
@@ -220,7 +227,8 @@ class ViewController: UIViewController {
                     self.starAppearence = 1
                 }
                 Timer.scheduledTimer(withTimeInterval: 0.15, repeats: false) {_ in
-                self.dismiss(animated: false, completion: nil)
+                    self.dismiss(animated: false, completion: nil)
+                    
                 }
             }
         }
