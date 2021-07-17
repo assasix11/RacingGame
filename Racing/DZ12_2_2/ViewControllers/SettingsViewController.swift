@@ -16,6 +16,38 @@ let buttonDismiss = UIImageView()
     let pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.height - 200, width: UIScreen.main.bounds.width, height: 150))
     
     override func viewDidLoad() {
+        builtInterface()
+    }
+    @objc func back() {
+        print("ths")
+        dismiss(animated: false, completion: nil)
+    }
+    @objc func pageControlDidChange (_ sender: UIPageControl) {
+        let current = sender.currentPage
+        scroll.setContentOffset(CGPoint(x: CGFloat(current) * view.frame.size.width, y: 0), animated: true)
+    }
+    @objc func choseJeep() {
+        CarChanging.carChanging.factory(car: .jeep)
+        UserDefaults.standard.setValue("jeep", forKey: "result")
+        jeepBackView.backgroundColor = .gray
+        fastCarView.backgroundColor = .lightGray
+        defaultCarView.backgroundColor = .lightGray
+    }
+    @objc func choseFastCar() {
+        CarChanging.carChanging.factory(car: .fastCar)
+        UserDefaults.standard.setValue("fastCar", forKey: "result")
+        jeepBackView.backgroundColor = .lightGray
+        fastCarView.backgroundColor = .gray
+        defaultCarView.backgroundColor = .lightGray
+    }
+    @objc func deafultCar() {
+        CarChanging.carChanging.factory(car: .defaultCar)
+        UserDefaults.standard.setValue("defaultCar", forKey: "result")
+        jeepBackView.backgroundColor = .lightGray
+        fastCarView.backgroundColor = .lightGray
+        defaultCarView.backgroundColor = .gray
+    }
+    func builtInterface() {
         scroll.backgroundColor = .lightGray
         scroll.showsHorizontalScrollIndicator = false
         view.backgroundColor = .lightGray
@@ -77,35 +109,6 @@ let buttonDismiss = UIImageView()
         startText.font = .systemFont(ofSize: 30)
         startText.text = "Выберите машину"
         view.addSubview(startText)
-    }
-    @objc func back() {
-        print("ths")
-        dismiss(animated: false, completion: nil)
-    }
-    @objc func pageControlDidChange (_ sender: UIPageControl) {
-        let current = sender.currentPage
-        scroll.setContentOffset(CGPoint(x: CGFloat(current) * view.frame.size.width, y: 0), animated: true)
-    }
-    @objc func choseJeep() {
-        CarChanging.carChanging.factory(car: .jeep)
-        UserDefaults.standard.setValue("jeep", forKey: "result")
-        jeepBackView.backgroundColor = .gray
-        fastCarView.backgroundColor = .lightGray
-        defaultCarView.backgroundColor = .lightGray
-    }
-    @objc func choseFastCar() {
-        CarChanging.carChanging.factory(car: .fastCar)
-        UserDefaults.standard.setValue("fastCar", forKey: "result")
-        jeepBackView.backgroundColor = .lightGray
-        fastCarView.backgroundColor = .gray
-        defaultCarView.backgroundColor = .lightGray
-    }
-    @objc func deafultCar() {
-        CarChanging.carChanging.factory(car: .defaultCar)
-        UserDefaults.standard.setValue("defaultCar", forKey: "result")
-        jeepBackView.backgroundColor = .lightGray
-        fastCarView.backgroundColor = .lightGray
-        defaultCarView.backgroundColor = .gray
     }
 }
 extension SettingsViewController : UIScrollViewDelegate {

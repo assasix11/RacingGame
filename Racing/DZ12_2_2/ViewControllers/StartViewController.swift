@@ -15,6 +15,20 @@ class FirstViewController: UIViewController {
         buttonStart.layer.cornerRadius = 30
         buttonStart.setTitle("Старт", for: .normal)
         startButtonSettings()
+        loadingCar()
+        super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(openSettings))
+        setting.addGestureRecognizer(tap)
+        setting.isUserInteractionEnabled = true
+        view.backgroundColor = .white
+    }
+    override func present(_ viewControllerToPresent: UIViewController,
+                          animated flag: Bool,
+                          completion: (() -> Void)? = nil) {
+        viewControllerToPresent.modalPresentationStyle = .fullScreen
+        super.present(viewControllerToPresent, animated: false, completion: completion)
+      }
+    func loadingCar() {
         if let managerLoad = UserDefaults.standard.string(forKey: "result") {
             switch managerLoad {
             case "jeep":
@@ -31,18 +45,7 @@ class FirstViewController: UIViewController {
                 CarChanging.carChanging.factory(car: .defaultCar)
             }
         }
-        super.viewDidLoad()
-        let tap = UITapGestureRecognizer(target: self, action: #selector(openSettings))
-        setting.addGestureRecognizer(tap)
-        setting.isUserInteractionEnabled = true
-        view.backgroundColor = .white
     }
-    override func present(_ viewControllerToPresent: UIViewController,
-                          animated flag: Bool,
-                          completion: (() -> Void)? = nil) {
-        viewControllerToPresent.modalPresentationStyle = .fullScreen
-        super.present(viewControllerToPresent, animated: false, completion: completion)
-      }
     @objc func openSettings() {
         print("smth")
         let homeView = SettingsViewController()

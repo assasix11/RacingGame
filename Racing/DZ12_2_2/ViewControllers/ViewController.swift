@@ -40,26 +40,24 @@ class ViewController: UIViewController {
         }
         timer.fire()
     }
-        override func viewWillDisappear(_ animated: Bool) {
-            let result = ResultsOfRace(time: start, date: currentTime())
-            let dataOfResults = encodeDate(myStruct: result)
-            let manager = FileManager()
-            guard let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first else {
-                return
-            }
-            print(url)
-            let newFolderUrl = url.appendingPathComponent("racingResults")
-            do {
-                try manager.createDirectory(at: newFolderUrl, withIntermediateDirectories: true, attributes: [:])
-                let newFilePath = newFolderUrl.appendingPathComponent("\(result.date).json")
-                manager.createFile(atPath: newFilePath.path, contents: dataOfResults, attributes: .none)
-            }
-            catch {
-                print("error in do/catch create directory")
-            }
-            // let decodableDataOfResults = decoderData(data: dataOfResults, myStruct: result)
-            
+    override func viewWillDisappear(_ animated: Bool) {
+        let result = ResultsOfRace(time: start, date: currentTime())
+        let dataOfResults = encodeDate(myStruct: result)
+        let manager = FileManager()
+        guard let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first else {
+            return
         }
+        print(url)
+        let newFolderUrl = url.appendingPathComponent("racingResults")
+        do {
+            try manager.createDirectory(at: newFolderUrl, withIntermediateDirectories: true, attributes: [:])
+            let newFilePath = newFolderUrl.appendingPathComponent("\(result.date).json")
+            manager.createFile(atPath: newFilePath.path, contents: dataOfResults, attributes: .none)
+        }
+        catch {
+            print("error in do/catch create directory")
+        }
+    }
     override func present(_ viewControllerToPresent: UIViewController,
                           animated flag: Bool,
                           completion: (() -> Void)? = nil) {
