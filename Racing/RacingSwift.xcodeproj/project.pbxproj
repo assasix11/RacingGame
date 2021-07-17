@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE52D61E264C2B3E00CDB759 /* resultOfraceStruct .swift in Sources */ = {isa = PBXBuildFile; fileRef = FE52D61D264C2B3E00CDB759 /* resultOfraceStruct .swift */; };
 		FE7E52342625C34D009FF711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E52332625C34D009FF711 /* AppDelegate.swift */; };
 		FE7E52362625C34D009FF711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E52352625C34D009FF711 /* SceneDelegate.swift */; };
 		FE7E52382625C34D009FF711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E52372625C34D009FF711 /* ViewController.swift */; };
 		FE7E523B2625C34D009FF711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7E52392625C34D009FF711 /* Main.storyboard */; };
 		FE7E523D2625C350009FF711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE7E523C2625C350009FF711 /* Assets.xcassets */; };
 		FE7E52402625C350009FF711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7E523E2625C350009FF711 /* LaunchScreen.storyboard */; };
-		FED34DC5263B1B560029C5C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED34DC4263B1B560029C5C0 /* FirstViewController.swift */; };
+		FE7E812C266C1B82005A4D4B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E812B266C1B82005A4D4B /* TableViewController.swift */; };
+		FED34DC5263B1B560029C5C0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED34DC4263B1B560029C5C0 /* StartViewController.swift */; };
 		FEEC4E722643E2CF007AF45B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4E712643E2CF007AF45B /* UIViewControllerExtension.swift */; };
 		FEEC4E76264695DA007AF45B /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4E75264695DA007AF45B /* UIButtonExtension.swift */; };
+		FEEC4ECA26470821007AF45B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEC4EC926470821007AF45B /* Settings.storyboard */; };
+		FEEC4ECD2647085A007AF45B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4ECC2647085A007AF45B /* SettingsViewController.swift */; };
+		FEEC4ED1264708F9007AF45B /* CarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4ED0264708F9007AF45B /* CarProtocol.swift */; };
+		FEEC4ED72647112B007AF45B /* DefaultCarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4ED62647112B007AF45B /* DefaultCarClass.swift */; };
+		FEEC4EDB264711CC007AF45B /* FastCarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4EDA264711CC007AF45B /* FastCarClass.swift */; };
+		FEEC4EDE264711F9007AF45B /* JeepCarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4EDD264711F9007AF45B /* JeepCarClass.swift */; };
+		FEEC4EE3264713F0007AF45B /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC4EE2264713F0007AF45B /* CarManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE52D61D264C2B3E00CDB759 /* resultOfraceStruct .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "resultOfraceStruct .swift"; sourceTree = "<group>"; };
 		FE7E52302625C34D009FF711 /* RacingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RacingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7E52332625C34D009FF711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE7E52352625C34D009FF711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +37,22 @@
 		FE7E523C2625C350009FF711 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE7E523F2625C350009FF711 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE7E52412625C350009FF711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FED34DC4263B1B560029C5C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		FE7E812B266C1B82005A4D4B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FED34DC4263B1B560029C5C0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FEEC4E712643E2CF007AF45B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		FEEC4E75264695DA007AF45B /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FEEC4E7C26469935007AF45B /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		FEEC4E7D26469935007AF45B /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		FEEC4E7E26469935007AF45B /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		FEEC4E7F26469936007AF45B /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		FEEC4E8026469936007AF45B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		FEEC4EC926470821007AF45B /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FEEC4ECC2647085A007AF45B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FEEC4ED0264708F9007AF45B /* CarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarProtocol.swift; sourceTree = "<group>"; };
+		FEEC4ED62647112B007AF45B /* DefaultCarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCarClass.swift; sourceTree = "<group>"; };
+		FEEC4EDA264711CC007AF45B /* FastCarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastCarClass.swift; sourceTree = "<group>"; };
+		FEEC4EDD264711F9007AF45B /* JeepCarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeepCarClass.swift; sourceTree = "<group>"; };
+		FEEC4EE2264713F0007AF45B /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +87,15 @@
 			children = (
 				FE7E52332625C34D009FF711 /* AppDelegate.swift */,
 				FE7E52352625C34D009FF711 /* SceneDelegate.swift */,
-				FE7E52372625C34D009FF711 /* ViewController.swift */,
-				FED34DC4263B1B560029C5C0 /* FirstViewController.swift */,
+				FEEC4E7B264698E6007AF45B /* Resources */,
+				FEEC4ECF26470860007AF45B /* ViewControllers */,
 				FEEC4E79264696E7007AF45B /* Extensions */,
-				FE7E52392625C34D009FF711 /* Main.storyboard */,
+				FEEC4ED32647096F007AF45B /* Protocols */,
+				FEEC4EE1264713C5007AF45B /* Storyboards */,
+				FEEC4ED526471100007AF45B /* CarClasses */,
 				FE7E523C2625C350009FF711 /* Assets.xcassets */,
-				FE7E523E2625C350009FF711 /* LaunchScreen.storyboard */,
 				FE7E52412625C350009FF711 /* Info.plist */,
+				FE52D61D264C2B3E00CDB759 /* resultOfraceStruct .swift */,
 			);
 			path = DZ12_2_2;
 			sourceTree = "<group>";
@@ -82,6 +107,58 @@
 				FEEC4E712643E2CF007AF45B /* UIViewControllerExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEEC4E7B264698E6007AF45B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FEEC4E7E26469935007AF45B /* Montserrat-Bold.ttf */,
+				FEEC4E7D26469935007AF45B /* Montserrat-Light.ttf */,
+				FEEC4E7F26469936007AF45B /* Montserrat-Medium.ttf */,
+				FEEC4E8026469936007AF45B /* Montserrat-Regular.ttf */,
+				FEEC4E7C26469935007AF45B /* Montserrat-SemiBold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FEEC4ECF26470860007AF45B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FED34DC4263B1B560029C5C0 /* StartViewController.swift */,
+				FEEC4ECC2647085A007AF45B /* SettingsViewController.swift */,
+				FE7E52372625C34D009FF711 /* ViewController.swift */,
+				FE7E812B266C1B82005A4D4B /* TableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FEEC4ED32647096F007AF45B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FEEC4ED0264708F9007AF45B /* CarProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FEEC4ED526471100007AF45B /* CarClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FEEC4EE2264713F0007AF45B /* CarManager.swift */,
+				FEEC4ED62647112B007AF45B /* DefaultCarClass.swift */,
+				FEEC4EDA264711CC007AF45B /* FastCarClass.swift */,
+				FEEC4EDD264711F9007AF45B /* JeepCarClass.swift */,
+			);
+			path = CarClasses;
+			sourceTree = "<group>";
+		};
+		FEEC4EE1264713C5007AF45B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E523E2625C350009FF711 /* LaunchScreen.storyboard */,
+				FEEC4EC926470821007AF45B /* Settings.storyboard */,
+				FE7E52392625C34D009FF711 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +222,7 @@
 				FE7E52402625C350009FF711 /* LaunchScreen.storyboard in Resources */,
 				FE7E523D2625C350009FF711 /* Assets.xcassets in Resources */,
 				FE7E523B2625C34D009FF711 /* Main.storyboard in Resources */,
+				FEEC4ECA26470821007AF45B /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -175,11 +253,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEC4ED72647112B007AF45B /* DefaultCarClass.swift in Sources */,
+				FE7E812C266C1B82005A4D4B /* TableViewController.swift in Sources */,
 				FEEC4E722643E2CF007AF45B /* UIViewControllerExtension.swift in Sources */,
-				FED34DC5263B1B560029C5C0 /* FirstViewController.swift in Sources */,
+				FED34DC5263B1B560029C5C0 /* StartViewController.swift in Sources */,
+				FEEC4ECD2647085A007AF45B /* SettingsViewController.swift in Sources */,
+				FEEC4EE3264713F0007AF45B /* CarManager.swift in Sources */,
 				FE7E52382625C34D009FF711 /* ViewController.swift in Sources */,
+				FEEC4EDE264711F9007AF45B /* JeepCarClass.swift in Sources */,
+				FEEC4ED1264708F9007AF45B /* CarProtocol.swift in Sources */,
 				FE7E52342625C34D009FF711 /* AppDelegate.swift in Sources */,
 				FE7E52362625C34D009FF711 /* SceneDelegate.swift in Sources */,
+				FE52D61E264C2B3E00CDB759 /* resultOfraceStruct .swift in Sources */,
+				FEEC4EDB264711CC007AF45B /* FastCarClass.swift in Sources */,
 				FEEC4E76264695DA007AF45B /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
